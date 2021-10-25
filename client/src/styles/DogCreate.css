@@ -1,0 +1,121 @@
+.divCreate{
+    background-image: url('https://previews.123rf.com/images/vasya/vasya1408/vasya140800057/31024394-huellas-de-animales-fondo-sin-patr%C3%B3n.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.buttonHome{
+    background-color: #e29292;
+    float: left;
+    font-size: medium;
+    margin-left: 40px;
+    margin-top: 36px;
+    height: 43px;
+    border: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.buttonHome:hover{
+    background-color: #cb997e;
+}
+
+.title{
+    color: #4c5042;
+    justify-content: center;
+    padding-right: 105px;
+}
+
+label{
+    color: #4c5042;
+    font-size: medium;
+    margin: 10px;
+}
+
+input{
+    background-color: white;
+    border-radius: 4px;
+    border-color: transparent;
+    margin: 10px;
+}
+input:hover{
+    background-color: #ffe8d6;
+}
+
+.allTemps{
+    display: inline-block;
+}
+.allTemps li{
+    justify-content: center;
+    display: inline;
+}
+.temp{
+    font-size: medium;
+    color: #e26647;
+    margin: 10px;
+}
+.x{
+    background-color: #ddbea9;
+    border: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+select{
+    cursor: pointer;
+    padding: 7px 10px;
+    height: 42px;
+    font-size: 1em;
+    color: #cb997e;
+    border:2px solid rgba(0,0,0,0.2);
+    border-radius: 8px;
+    transition: all 0.25s ease;
+    margin: 10px;
+}
+select:hover{
+    background: #ffe8d6;
+    color: rgb(71, 71, 71);
+    border-color: rgb(71, 71, 71);
+}
+
+.boop{
+    background-color: #e29292;
+    border: transparent;
+    border-radius: 8px;
+    font-size: medium;
+    height: 43px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 10px;
+    color: #4c5042;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+.boop:hover{
+    background-color: #cb997e;
+    transform:scale(1.1);
+}
+
+.error{
+    color: red;
+    font-size: small;
+    margin-top: 0;
+}
+
+br{
+    margin-top: 0%;
+}
+
+.mainForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dda6a680;
+    /* color: rgb(236, 230, 230); */
+    width:50%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 400px;
+}
