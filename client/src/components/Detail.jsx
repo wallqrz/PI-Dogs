@@ -45,7 +45,7 @@ export default function Detail(props){
                                 <ul className='allTemps'>
                                     {
                                     // myDog[0].createdInDb?
-                                    //         myDog[0].Temperaments.map(el => {
+                                    //         myDog[0].temperaments.map(el => {
                                     //             return <li key={el}><label>{el}</label></li>
                                     //         }) :
                                     myDog[0].temperament ?
@@ -58,7 +58,7 @@ export default function Detail(props){
                                     <h4 className='caracts'>Weight</h4>
                                     <p>{myDog[0].weightMin} - {myDog[0].weightMax} kg</p>
                                     <h4 className='caracts'>Life span</h4>
-                                    <p className='last'>{myDog[0].life_span} years</p>
+                                    <p className='last'>{myDog[0].lifeSpan} years</p>
                             </div>
                         </li>
                     </ul>

@@ -60,7 +60,7 @@ export function getDogs(name){
                 payload: json.data
             })
         } catch (error) {
-            console.log(alert('Dog not found'));
+            alert('Dog not found');
         }
     }
 }
@@ -122,7 +122,7 @@ export function getDetail(id){
             })
             
         } catch (err) {
-            console.log(err)
+            alert('Detail not found')
             
         }
     }

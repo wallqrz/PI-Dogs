@@ -96,7 +96,7 @@ router.post('/dogs', async (req, res) => {
                 weightMin,
                 weightMax,
                 lifeSpan: lifeSpan + ' years.',
-                image: image,
+                image: image
         });
 
         let temperamentDB = await Temperament.findAll({

@@ -52,7 +52,7 @@ function rootReducer(state = initialState, action){
                 ...state,
                 dogs: temperamentsFiltered
             }
-
+            
         case FILTER_BY_ORIGIN:
 
             const all = state.allDogs;
