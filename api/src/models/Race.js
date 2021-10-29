@@ -1,4 +1,4 @@
-  const { DataTypes, STRING} = require('sequelize');
+  const { DataTypes } = require('sequelize');
 // Exportamos una funcion que define el modelo
 // Luego le injectamos la conexion a sequelize.
 module.exports = (sequelize) => {
@@ -32,16 +32,16 @@ module.exports = (sequelize) => {
     },
     lifeSpan: {
       type: DataTypes.STRING,
-      allowNull: true
     },
     image: {
       type: DataTypes.STRING,
-      allowNull: true,
     },
     createdInDb:{           //se crea para facilitar la buscado de un dato creado en la DB
       type: DataTypes.BOOLEAN,
-      allowNull: false,
       defaultValue: true
     }
+  },
+  {
+    timestamps: false
   });
 };

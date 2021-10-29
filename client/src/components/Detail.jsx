@@ -44,10 +44,6 @@ export default function Detail(props){
                                 <h4 className='caracts'>Temperaments:</h4>
                                 <ul className='allTemps'>
                                     {
-                                    // myDog[0].createdInDb?
-                                    //         myDog[0].temperaments.map(el => {
-                                    //             return <li key={el}><label>{el}</label></li>
-                                    //         }) :
                                     myDog[0].temperament ?
                                         myDog[0].temperament.split(', ').map(el => {
                                             return <li key={el}><label>{el}</label></li>

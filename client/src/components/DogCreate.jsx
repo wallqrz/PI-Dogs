@@ -124,7 +124,7 @@ export default function DogCreate(){
     function handleSubmit(e){
         e.preventDefault();
         console.log(errors);
-        if(Object.getOwnPropertyNames(errors).length && input.name && input.heightMin && input.heightMax && input.weightMin /*&& input.weightMax && input.lifeSpan && input.temperaments.length*/){
+        if(Object.getOwnPropertyNames(errors).length && input.name && input.heightMin && input.heightMax && input.weightMin && input.weightMax && input.lifeSpan && input.temperaments.length ){
             dispatch(postDog(input));
             alert('Dog created succesfully');
             setInput({

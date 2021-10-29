@@ -15,7 +15,7 @@ export function getDogs(name){
     return async function(dispatch){
            try {
                if(name){
-                   return axios.get(`http://localhost:3001/dogs?name=${name}`)
+                   return await axios.get(`http://localhost:3001/dogs?name=${name}`)
                    .then(res => dispatch({ type: GET_DOGS, payload: res.data}))
                    .catch(err => dispatch({ type: GET_DOGS, payload: err.data}))
                }
@@ -26,7 +26,7 @@ export function getDogs(name){
                });
 
            }  catch(err){
-            var fail = axios.get('http://localhost:3001/dogs?name=' + name)
+            var fail = await axios.get('http://localhost:3001/dogs?name=' + name)
                 .then(res => res.data)
             return dispatch({
                 type: SEARCH_FAIL,
@@ -35,19 +35,6 @@ export function getDogs(name){
         }
     }
 }
-
-// export const searchByName = (name) => {
-//     return (dispatch) => {
-//       axios.get(`http://localhost:3001/dogs?name=${name}`)
-//       .then((json) => {
-//         return dispatch({
-//           type: SEARCH_BY_NAME,
-//           payload: json.data,
-//         })
-//       })
-//     }
-//   }
-
 
   export function searchByName(name) {
     return async function (dispatch) {
@@ -106,7 +93,7 @@ export function sortByWeight(payload){
 
 export function postDog(payload){
     return async function(dispatch){
-        const response = axios.post('http://localhost:3001/dogs', payload)
+        const response = await axios.post('http://localhost:3001/dogs', payload)
         console.log(response)
         return response;
     }

@@ -4,7 +4,7 @@ const getDbInfo = async () => {
     return await Race.findAll({
         include:{
             model: Temperament,
-            attributes: ['name'],
+            attributes: ["name"],
             through:{
                 attributes: [],
             },

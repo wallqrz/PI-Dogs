@@ -19,13 +19,13 @@ export default function Home (){
 
     // Paginado
     const [ currentPage, setCurrentPage ] = useState(1);
-    const [dogsPerPage, /*setDogsPerAge*/] = useState(8);
+    const [dogsPerPage, setDogsPerAge] = useState(8);
     const indexOfLastDog = currentPage * dogsPerPage;
     const indexOfFirstDog = indexOfLastDog - dogsPerPage;
     const currentDogs = allDogs.slice(indexOfFirstDog, indexOfLastDog);
 
 
-    const[/*orden*/, setOrden] = useState('');
+    const[orden, setOrden] = useState('');
 
     const paginado = (pageNumber) => {
         setCurrentPage(pageNumber);
